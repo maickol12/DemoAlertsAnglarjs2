@@ -44,6 +44,29 @@
 #letter{
   position: absolute;
   z-index: 3;
-  top: 26%;
+  top: 25%;
   left:20%;
+  font-size: 20pt;
+  color: #59C1D3;
+  font-family: "Arial Rounded MT Bold";
+}
+#form{
+  position: absolute;
+  z-index: 3;
+  top: 33%;
+  left:22%;
+}
+#user{
+  background-color: #FFF;
+  background-position: right center;
+  background-image: url("../../assets/img/user.png");
+  background-repeat: no-repeat;
+  background-size: 20px;
+}
+#password{
+  background-color: #FFF;
+  background-position: right center;
+  background-image: url("../../assets/img/password.png");
+  background-repeat: no-repeat;
+  background-size: 20px;
 }
