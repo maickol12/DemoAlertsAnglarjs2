@@ -20,6 +20,22 @@ export class LoginComponent implements OnInit {
 
   }
   login(data: any) {
-      alert(data.user + data.password);
+      let email;
+      let password;
+
+      email = data.user;
+      password = data.password;
+
+      let info = localStorage.getItem(email);
+      info = JSON.parse( info );
+
+
+      if ( info ) {
+         if ( info['password'] === password ) {
+            alert('Login iniciado con exito');
+         }else{
+           alert('Ocurrio un error al iniciar');
+        }
+      }
   }
 }

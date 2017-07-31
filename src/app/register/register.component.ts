@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators} from '@angular/forms';
+import { Router } from '@angular/router';
 import {register} from "ts-node/dist";
 
 @Component({
@@ -9,7 +10,7 @@ import {register} from "ts-node/dist";
 })
 export class RegisterComponent implements OnInit {
   form: FormGroup;
-  constructor(fb: FormBuilder) {
+  constructor(fb: FormBuilder, private router: Router) {
     this.form = fb.group({
       'username': [null, Validators.required],
       'email': [null, Validators.required],
@@ -20,7 +21,7 @@ export class RegisterComponent implements OnInit {
   ngOnInit() {
 
   }
-  singup(data: any) {
+  singup(data: any ) {
      this.register( data.username, data.email, data.password );
    }
 
@@ -36,10 +37,13 @@ export class RegisterComponent implements OnInit {
 
         localStorage.setItem(email, JSON.stringify(jsonData) );
 
-        alert("Gracias por registrarte en nuestra demo!!! ")
+        alert('Gracias por registrarte en nuestra demo!!! ');
       }else {
         alert('el usuario ya existe');
       }
+
+      this.router.navigate(['/login']);
+
 
     }
 
