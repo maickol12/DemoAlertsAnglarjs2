@@ -11,6 +11,10 @@ import { RegisterComponent } from './register/register.component';
 import { AlertComponent } from './alert/alert.component';
 import { ListAlertsComponent } from './list-alerts/list-alerts.component';
 
+import { TopMenuComponent } from './template/top-menu/top-menu.component';
+import { FooterComponent } from './template/footer/footer.component';
+import { MainMenuComponent } from './template/main-menu/main-menu.component';
+
 
 
 
@@ -21,7 +25,10 @@ import { ListAlertsComponent } from './list-alerts/list-alerts.component';
 
     RegisterComponent,
     AlertComponent,
-    ListAlertsComponent
+    ListAlertsComponent,
+    TopMenuComponent,
+    FooterComponent,
+    MainMenuComponent
 
   ],
   imports: [
