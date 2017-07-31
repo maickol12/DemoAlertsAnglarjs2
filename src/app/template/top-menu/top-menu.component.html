@@ -1,0 +1,17 @@
+
+
+<div class="pos-f-t fixed-top header"   >
+  <nav class="navbar navbar-inverse navbar-toggleable-md topnav header-style" >
+
+
+    <button #toggleSidebarButton class="btn btn-default btn-lg btntop" id="toggle-sidebar" type="button" (click)="toggleSidebar()">
+      <span class="glyphicon glyphicon-option-vertical" aria-hidden="true"></span>
+    </button>
+
+    <a (click)="hideMenu($event)" class="navbar-brand" [routerLink]="['/']" >
+      <img src="../../assets/img/smart-sdk.png" class="imagentop"/>
+    </a>
+  </nav>
+
+</div>
+

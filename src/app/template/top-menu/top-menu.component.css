@@ -1,0 +1,52 @@
+#toggle-sidebar{
+  top:4px !important;
+}
+
+.imagentop
+{
+  height: 50px;
+  margin-left: 50%;
+  margin-top: -10px;
+}
+.header-style
+{
+  height: 60px;
+  background: #EC407A;
+
+
+}
+.titulo-style
+{
+  color: #221aff;
+
+}
+
+/*#00d6de;*/
+.top-iconos-stile
+{
+  color:rgba(0,214,222,1);
+  border-bottom-color: rgba(255,255,255,0);
+  border-top-color: rgba(255,255,255,0);
+}
+
+.titulo-style:hover,.titulo-style:focus {
+  color:#002D67;
+  outline: none;
+  outline-offset: -2px;
+}
+
+.btn-style
+{
+  background: rgba(255,255,255,0);
+}
+
+.btntop
+{
+  margin-left: 2%;
+  margin-top: auto;
+  position: absolute;
+  background: transparent;
+  border-color: transparent;
+  color: #FFFFFF;
+
+}
