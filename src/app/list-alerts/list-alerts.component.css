@@ -1,5 +1,4 @@
 
 #scroll{
-  position: static;
-  overflow-y: scroll !important;
+  overflow-y: scroll;
 }

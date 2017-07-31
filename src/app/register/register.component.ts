@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators} from '@angular/forms';
 import { Router } from '@angular/router';
-import {register} from "ts-node/dist";
+
 
 @Component({
   selector: 'app-register',
@@ -19,7 +19,7 @@ export class RegisterComponent implements OnInit {
   }
 
   ngOnInit() {
-
+    window.document.querySelector('body').style.overflowY = 'scroll';
   }
   singup(data: any ) {
      this.register( data.username, data.email, data.password );
