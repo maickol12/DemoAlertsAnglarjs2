@@ -1,3 +1,6 @@
-<p>
-  list-alerts works!
-</p>
+<div *ngFor="let alert of alertList">
+  <app-alert [alert]="alert">
+
+  </app-alert>
+
+</div>

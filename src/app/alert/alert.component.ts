@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import { CascaronAlert } from '../carcaronAlert';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-alert',
@@ -6,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./alert.component.css']
 })
 export class AlertComponent implements OnInit {
-
-  constructor() { }
+  @Input() alert: CascaronAlert;
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
