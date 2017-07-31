@@ -8,13 +8,21 @@ import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RegisterComponent } from './register/register.component';
 
+import { AlertComponent } from './alert/alert.component';
+import { ListAlertsComponent } from './list-alerts/list-alerts.component';
+
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent
+
+    RegisterComponent,
+    AlertComponent,
+    ListAlertsComponent
+
   ],
   imports: [
     RoutesRoutingModule,

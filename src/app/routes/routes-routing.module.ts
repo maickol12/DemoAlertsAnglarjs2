@@ -3,6 +3,9 @@ import {Routes, RouterModule } from '@angular/router';
 import {LoginComponent} from '../login/login.component';
 import {RegisterComponent} from '../register/register.component';
 
+import {AlertComponent} from '../alert/alert.component';
+
+
 
 const routes: Routes = [
   {
@@ -13,6 +16,11 @@ const routes: Routes = [
   },
   {
     path: 'register', component: RegisterComponent
+
+  },
+  {
+    path: 'alert', component: AlertComponent
+
   }
 ];
 
