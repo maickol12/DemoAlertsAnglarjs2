@@ -5,6 +5,7 @@ import {RegisterComponent} from '../register/register.component';
 import {ListAlertsComponent} from '../list-alerts/list-alerts.component';
 
 
+
 const routes: Routes = [
   {
     path: '', redirectTo: 'login', pathMatch: 'full'
@@ -14,6 +15,7 @@ const routes: Routes = [
   },
   {
     path: 'register', component: RegisterComponent
+
   },
   {
     path: 'listalerts', component: ListAlertsComponent
