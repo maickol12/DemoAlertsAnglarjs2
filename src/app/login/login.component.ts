@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnInit() {
-
+    window.document.querySelector('body').style.overflowY = 'hidden';
   }
   login(data: any) {
       let email;

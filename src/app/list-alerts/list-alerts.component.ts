@@ -11,10 +11,7 @@ export class ListAlertsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    const body = document.body;
-
-    body.removeAttribute('overflow-y');
-
+    window.document.querySelector('body').style.overflowY = 'scroll';
     this.alertList = [
       new CascaronAlert('camara 1', 'tipo 1', '31/07/2017'),
       new CascaronAlert('camara 2', 'tipo 2', '31/07/2017'),
