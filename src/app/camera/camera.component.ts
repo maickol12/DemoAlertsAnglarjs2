@@ -8,7 +8,7 @@ import {Router} from '@angular/router';
   styleUrls: ['./camera.component.css']
 })
 export class CameraComponent implements OnInit {
-
+  Color1 = '#59C0D2';
   @Input() alert: CascaronCamera;
   constructor(private router: Router) { }
 
