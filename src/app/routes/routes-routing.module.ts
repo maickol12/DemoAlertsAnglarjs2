@@ -3,6 +3,7 @@ import {Routes, RouterModule } from '@angular/router';
 import {LoginComponent} from '../login/login.component';
 import {RegisterComponent} from '../register/register.component';
 import {ListAlertsComponent} from '../list-alerts/list-alerts.component';
+import {ContentComponent} from '../content/content.component';
 
 
 
@@ -18,8 +19,12 @@ const routes: Routes = [
 
   },
   {
-    path: 'listalerts', component: ListAlertsComponent
+    path: 'listalerts', redirectTo:'content',pathMatch:'full'
+  },
+  {
+    path: 'content',component:ContentComponent
   }
+
 ];
 
 @NgModule({

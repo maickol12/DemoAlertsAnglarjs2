@@ -1,17 +1,18 @@
+{{conten}}
 <nav class="navbar navbar-inverse navbar-fixed-bottom tama">
 
   <div class="boton">
-    <a  class="navbar-brand span" (click)="item1()" >
-      <span class="glyphicon glyphicon-bell " aria-hidden="true"></span>
+    <a (click)="clicboton('uno')" class="navbar-brand span" (click)="item1()" >
+      <span class="glyphicon glyphicon-bell " aria-hidden="true" [ngStyle]="{'color': Color1 }" ></span>
     </a>
   </div>
   <div class="botonc">
-    <a  class="navbar-brand span" (click)="item2()" >
+    <a  (click)="clicboton('dos')" class="navbar-brand span" (click)="item1()" [ngStyle]="{'color':Color2}">
       <span class="	glyphicon glyphicon-facetime-video" aria-hidden="true"></span>
     </a>
   </div>
   <div class="botont">
-    <a  class="navbar-brand span" (click)="item3()" >
+    <a (click)="clicboton('tres')" class="navbar-brand span" (click)="item1()" [ngStyle]="{'color':Color3}" >
       <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
     </a>
   </div>
