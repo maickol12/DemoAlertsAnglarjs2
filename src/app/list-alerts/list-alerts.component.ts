@@ -15,7 +15,7 @@ export class ListAlertsComponent implements OnInit {
   ngOnInit() {
     window.document.querySelector('body').style.overflowY = 'scroll';
   }
-  change(data: string): void {
+  change(data: string) {
     this.selector = data;
   }
 }
