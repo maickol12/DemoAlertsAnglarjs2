@@ -19,10 +19,10 @@ const routes: Routes = [
 
   },
   {
-    path: 'listalerts', redirectTo:'content',pathMatch:'full'
+    path: 'listalerts', component: ListAlertsComponent
   },
   {
-    path: 'content',component:ContentComponent
+    path: 'content', component: ContentComponent
   }
 
 ];

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, Output, EventEmitter} from '@angular/core';
 
 
 
@@ -8,36 +8,45 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
-  Color1="#888888";
-  Color2="#59C0D2";
-  Color3="#888888";
-  public conten= '<app-map-content></app-map-content>';
+
+
+  @Output() emit: EventEmitter<string>  = new EventEmitter();
+
+  Color1 = '#888888';
+  Color2 = '#59C0D2';
+  Color3 = '#888888';
+
+
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  public clicboton( tipo )
-  {
-    this.Color3="#888888";
-    this.Color1="#888888";
-    this.Color2="#888888";
-     if (tipo==="uno")
+
+
+  clicboton( tipo ) {
+    this.Color3 = '#888888';
+    this.Color1 = '#888888';
+    this.Color2 = '#888888';
+     if (tipo === 'uno')
      {
-       this.Color1="#59C0D2";
-       this.conten='<app-list-alerts></app-list-alerts>';
+       this.emit.emit('1');
+       this.Color1 = '#59C0D2';
+
      }
-    if (tipo==="dos")
+    if (tipo === 'dos')
     {
-      this.Color2="#59C0D2";
-      this.conten="<app-map-content></app-map-content>";
+      this.emit.emit('2');
+      this.Color2 = '#59C0D2';
+
     }
-    if (tipo==="tres")
-    {
-      this.Color3="#59C0D2";
-      this.conten="<app-settings></app-settings>";
+    if (tipo === 'tres') {
+      this.emit.emit('3');
+      this.Color3 = '#59C0D2' ;
+
     }
   }
+
 
 }
