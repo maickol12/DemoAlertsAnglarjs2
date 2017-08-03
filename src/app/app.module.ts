@@ -14,6 +14,7 @@ import { ListAlertsComponent } from './list-alerts/list-alerts.component';
 import { TopMenuComponent } from './template/top-menu/top-menu.component';
 import { FooterComponent } from './template/footer/footer.component';
 import { MainMenuComponent } from './template/main-menu/main-menu.component';
+import { CuerpoAlertsComponent } from './cuerpo-alerts/cuerpo-alerts.component';
 
 
 
@@ -28,7 +29,8 @@ import { MainMenuComponent } from './template/main-menu/main-menu.component';
     ListAlertsComponent,
     TopMenuComponent,
     FooterComponent,
-    MainMenuComponent
+    MainMenuComponent,
+    CuerpoAlertsComponent
 
   ],
   imports: [

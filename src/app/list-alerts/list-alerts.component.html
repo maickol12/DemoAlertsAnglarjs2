@@ -1,8 +1,13 @@
 <app-top-menu #topMenu></app-top-menu>
 
-<div *ngFor="let alert of alertList">
-  <app-alert [alert]="alert">
-
-  </app-alert>
-
+<div *ngIf="selector === '1'">
+  <app-cuerpo-alerts></app-cuerpo-alerts>
 </div>
+<div *ngIf="selector === '2'">
+  <app-login></app-login>
+</div>
+<div *ngIf="selector === '3'">
+  <app-register></app-register>
+</div>
+<app-footer (emit)="change($event)"></app-footer>
+
