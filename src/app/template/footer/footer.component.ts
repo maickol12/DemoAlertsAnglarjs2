@@ -11,7 +11,7 @@ export class FooterComponent implements OnInit {
   Color1="#888888";
   Color2="#59C0D2";
   Color3="#888888";
-  public conten='<app-map-content></app-map-content>';
+  public conten= '<app-map-content></app-map-content>';
 
   constructor() { }
 
