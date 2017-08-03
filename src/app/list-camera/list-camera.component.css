@@ -1,0 +1,46 @@
+
+.span
+{
+  padding-left: 40%;
+  color: #888888 ;
+  font-size: x-large;
+
+
+}
+.tama
+{
+  width:100%;
+  height: 53px;
+  background: #FFFFFF;
+  border: transparent;
+  position: static;
+
+}
+
+.boton
+
+{
+  width: 50%;
+  height: 56px;
+  background: #FFFFFF;
+  display: inline-block;
+  margin: 0px;
+  margin-left: 0px;
+  margin-top: -2px;
+  margin-right: 0px;
+  border-bottom: solid 6px #59C0D2;
+
+}
+.botonc
+{
+  width: 50%;
+  height: 56px;
+  background: #FFFFFF;
+  display: inline-block;
+  margin: 0px;
+  margin-left: -4px;
+  margin-top: -2px;
+  margin-right: 0px;
+  border-bottom: solid 6px #888888;
+
+}

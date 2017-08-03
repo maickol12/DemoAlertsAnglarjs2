@@ -18,6 +18,9 @@ import { CuerpoAlertsComponent } from './cuerpo-alerts/cuerpo-alerts.component';
 import { ContentComponent } from './content/content.component';
 import { MapContentComponent } from './map-content/map-content.component';
 import { SettingsComponent } from './settings/settings.component';
+import { CameraComponent } from './camera/camera.component';
+import { CuerpoCameraComponent } from './cuerpo-camera/cuerpo-camera.component';
+import { ListCameraComponent } from './list-camera/list-camera.component';
 
 
 
@@ -37,7 +40,10 @@ import { SettingsComponent } from './settings/settings.component';
     CuerpoAlertsComponent,
     ContentComponent,
     MapContentComponent,
-    SettingsComponent
+    SettingsComponent,
+    CameraComponent,
+    CuerpoCameraComponent,
+    ListCameraComponent
 
   ],
   imports: [

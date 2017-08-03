@@ -1,0 +1,19 @@
+<nav class="tama">
+
+  <div class="boton" [ngStyle]="{'border-bottom':border}">
+    <a (click)="change('1')" class="navbar-brand span" >
+      <span class="glyphicon glyphicon-facetime-video " aria-hidden="true" [ngStyle]="{'color': Color1 }" ></span>
+    </a>
+  </div>
+  <div class="botonc" [ngStyle]="{'border-bottom':border2}">
+    <a  (click)="change('2')" class="navbar-brand span" [ngStyle]="{'color':Color2}">
+      <span class="	glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+    </a>
+  </div>
+</nav>
+<div *ngIf="selector === '1'">
+  <app-cuerpo-camera></app-cuerpo-camera>
+</div>
+<div *ngIf="selector === '2'">
+  <app-cuerpo-alerts></app-cuerpo-alerts>
+</div>

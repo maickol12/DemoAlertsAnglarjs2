@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class ListAlertsComponent implements OnInit {
   selector: string;
   constructor() {
-    this.selector = '1';
+    this.selector = '2';
   }
 
   ngOnInit() {

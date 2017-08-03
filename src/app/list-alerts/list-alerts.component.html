@@ -1,12 +1,14 @@
 
 <app-top-menu></app-top-menu>
+<div class="content"></div>
 <div *ngIf="selector === '1'">
   <app-cuerpo-alerts></app-cuerpo-alerts>
 </div>
 <div *ngIf="selector === '2'">
-  <app-login></app-login>
+  <app-list-camera></app-list-camera>
 </div>
 <div *ngIf="selector === '3'">
   <app-register></app-register>
 </div>
+<div class="content2"></div>
 <app-footer (emit)="change($event)"></app-footer>

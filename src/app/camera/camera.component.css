@@ -1,0 +1,43 @@
+.tittle{
+  font-size: 15pt;
+  font-family: "Arial Rounded MT Bold";
+  margin-top: 10px;
+}
+.video{
+  width: 100%;
+
+}
+#izquierda{
+  position: relative;
+  vertical-align: top;
+  display: inline-block;
+  width: 40%;
+}
+#izquierda p{
+  padding: 0;
+  margin: 0 !important;
+}
+#izquierda > p{
+  padding-left: 10px;
+}
+#derecha{
+  position: relative;
+  vertical-align: top;
+  display: inline-block;
+  width: 58%;
+}
+#derecha > p{
+  text-align: right;
+  padding-right: 10px;
+}
+#derecha p{
+  padding: 0;
+  margin: 0 !important;
+}
+#contenido_alert{
+  margin: 10px;
+}
+.subtitulo{
+  font-size: 10pt;
+  font-family: "Arial Rounded MT Bold";
+}
