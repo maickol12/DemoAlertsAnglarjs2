@@ -11,8 +11,9 @@
     </a>
   </div>
 </nav>
+
 <div *ngIf="selector === '1'">
-  <app-cuerpo-camera></app-cuerpo-camera>
+  <app-cuerpo-camera (emite)="change('1')"></app-cuerpo-camera>
 </div>
 <div *ngIf="selector === '2'">
   <app-map-content></app-map-content>

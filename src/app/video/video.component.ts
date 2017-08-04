@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import {VgAPI} from 'videogular2/core';
 
 
@@ -8,7 +8,7 @@ import {VgAPI} from 'videogular2/core';
   styleUrls: ['./video.component.css']
 })
 export class VideoComponent implements OnInit {
-
+ @Output() emite: EventEmitter<string> =new EventEmitter();
   api: VgAPI;
   constructor() { }
   onPlayerReady(api: VgAPI) {
@@ -22,6 +22,11 @@ export class VideoComponent implements OnInit {
     this.api.play();
   }
   ngOnInit() {
+  }
+
+  change($event)
+  {
+    this.emite.emit($event);
   }
 
 }

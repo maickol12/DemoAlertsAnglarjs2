@@ -7,5 +7,5 @@
   </div>
 </div>
 <div *ngIf="selector === '2'">
-  <app-video></app-video>
+  <app-video (emite)="change($event)"></app-video>
 </div>
