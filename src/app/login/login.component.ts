@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -9,7 +10,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class LoginComponent implements OnInit {
   form: FormGroup;
 
-  constructor(fb: FormBuilder) {
+  constructor(fb: FormBuilder, public router: Router) {
     this.form = fb.group({
       'user' : [null, Validators.required],
       'password' : [null, Validators.required]
@@ -32,10 +33,12 @@ export class LoginComponent implements OnInit {
 
       if ( info ) {
          if ( info['password'] === password ) {
-            alert('Login iniciado con exito');
+            this.router.navigateByUrl('/listalerts');
          }else{
            alert('Ocurrio un error al iniciar');
         }
+      }else{
+        alert('puto');
       }
   }
 }

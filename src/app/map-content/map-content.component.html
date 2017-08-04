@@ -1,6 +1,11 @@
-<agm-map [latitude]="lat" [longitude]="lng" [style.height.px]="640">
+<agm-map [latitude]="lat" [longitude]="lng" [style.height.px]="640" [zoom]="16">
 
-  <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+    <div *ngFor="let camera of cameras" >
+      <agm-marker  [latitude]="camera.lat" [longitude]="camera.lng" [label]="camera.nombre" >
+        <div class='agm-info-window-content'>      <ng-content></ng-content>
+        </div>
+      </agm-marker>
+    </div>
 
 </agm-map>
 
