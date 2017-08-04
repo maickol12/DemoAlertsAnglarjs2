@@ -11,7 +11,7 @@ export class MapContentComponent implements OnInit {
   lng: number = -99.23864364624023;
 
   @ViewChild('fillContentDiv') fillContentDiv;
-  
+
   constructor() { }
 
   ngOnInit() {

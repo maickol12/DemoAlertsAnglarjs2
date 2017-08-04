@@ -5,7 +5,7 @@ import {RegisterComponent} from '../register/register.component';
 import {ListAlertsComponent} from '../list-alerts/list-alerts.component';
 import {ContentComponent} from '../content/content.component';
 import {MapContentComponent} from '../map-content/map-content.component';
-
+import {VideoComponent} from '../video/video.component';
 
 
 const routes: Routes = [
@@ -27,6 +27,9 @@ const routes: Routes = [
   },
   {
     path: 'mapa', component: MapContentComponent
+  },
+  {
+    path: 'video', component: VideoComponent
   }
 
 

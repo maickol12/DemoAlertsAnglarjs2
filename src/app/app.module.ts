@@ -22,6 +22,11 @@ import { CameraComponent } from './camera/camera.component';
 import { CuerpoCameraComponent } from './cuerpo-camera/cuerpo-camera.component';
 import { ListCameraComponent } from './list-camera/list-camera.component';
 import {AgmCoreModule} from '@agm/core';
+import { VideoComponent } from './video/video.component';
+
+import { VgCoreModule } from 'videogular2/core';
+import { VgControlsModule } from 'videogular2/controls';
+
 
 
 
@@ -44,7 +49,8 @@ import {AgmCoreModule} from '@agm/core';
     SettingsComponent,
     CameraComponent,
     CuerpoCameraComponent,
-    ListCameraComponent
+    ListCameraComponent,
+    VideoComponent
 
   ],
   imports: [
@@ -53,7 +59,9 @@ import {AgmCoreModule} from '@agm/core';
     FormsModule,
     HttpModule,
     ReactiveFormsModule,
-    AgmCoreModule.forRoot({apiKey: 'AIzaSyBk0YKTy49Sy8jpfqQzEqNLkb2Ju8-sWVk'})
+    VgCoreModule,
+    VgControlsModule,
+    AgmCoreModule.forRoot({apiKey: 'AIzaSyBk0YKTy49Sy8jpfqQzEqNLkb2Ju8-sWVk'}),
   ],
   providers: [],
   bootstrap: [AppComponent],
