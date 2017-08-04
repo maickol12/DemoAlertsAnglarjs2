@@ -21,6 +21,7 @@ import { SettingsComponent } from './settings/settings.component';
 import { CameraComponent } from './camera/camera.component';
 import { CuerpoCameraComponent } from './cuerpo-camera/cuerpo-camera.component';
 import { ListCameraComponent } from './list-camera/list-camera.component';
+import {AgmCoreModule} from '@agm/core';
 
 
 
@@ -51,7 +52,8 @@ import { ListCameraComponent } from './list-camera/list-camera.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AgmCoreModule.forRoot({apiKey: 'AIzaSyBk0YKTy49Sy8jpfqQzEqNLkb2Ju8-sWVk'})
   ],
   providers: [],
   bootstrap: [AppComponent],

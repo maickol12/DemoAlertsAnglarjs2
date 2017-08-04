@@ -4,6 +4,7 @@ import {LoginComponent} from '../login/login.component';
 import {RegisterComponent} from '../register/register.component';
 import {ListAlertsComponent} from '../list-alerts/list-alerts.component';
 import {ContentComponent} from '../content/content.component';
+import {MapContentComponent} from '../map-content/map-content.component';
 
 
 
@@ -23,7 +24,11 @@ const routes: Routes = [
   },
   {
     path: 'content', component: ContentComponent
+  },
+  {
+    path: 'mapa', component: MapContentComponent
   }
+
 
 ];
 
