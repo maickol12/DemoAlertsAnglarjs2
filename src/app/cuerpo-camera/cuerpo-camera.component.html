@@ -1,6 +1,11 @@
-<div *ngFor="let alert of alertList">
-  <app-camera [alert]="alert">
+<div *ngIf="selector === '1'">
+  <div *ngFor="let alert of alertList">
+    <app-camera [alert]="alert" (click)="change('2')" >
 
-  </app-camera>
+    </app-camera>
 
+  </div>
+</div>
+<div *ngIf="selector === '2'">
+  <app-video></app-video>
 </div>

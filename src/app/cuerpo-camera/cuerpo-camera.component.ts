@@ -7,10 +7,14 @@ import { CascaronCamera } from '../cascaronCamera';
   styleUrls: ['./cuerpo-camera.component.css']
 })
 export class CuerpoCameraComponent implements OnInit {
-
+  selector: string;
   alertList: CascaronCamera[];
-  constructor() { }
-
+  constructor() {
+    this.selector = '1';
+  }
+  change(data: string) {
+    this.selector = data;
+  }
   ngOnInit() {
     this.alertList = [
       new CascaronCamera('camara 1', 'lat: 41.3034738,lon: -74.0093994', 'Cyber-shot DSC-RX100','Activa'),
