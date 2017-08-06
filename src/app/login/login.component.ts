@@ -34,11 +34,11 @@ export class LoginComponent implements OnInit {
       if ( info ) {
          if ( info['password'] === password ) {
             this.router.navigateByUrl('/listalerts');
-         }else{
+         }else {
            alert('Ocurrio un error al iniciar');
         }
-      }else{
-        alert("el usuario no se encuentra en la base de datos...");
+      }else {
+        alert('el usuario no se encuentra en la base de datos...');
       }
   }
 }

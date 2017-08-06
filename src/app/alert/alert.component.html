@@ -4,8 +4,8 @@
     <p class="subtitulo">{{alert.tipoalerta}}</p>
   </div>
   <div id="derecha">
-    <p class="tittle">{{alert.fecha}}</p>
-    <p class="subtitulo">{{alert.fecha}}/p>
+    <p class="tittle">{{alert.fecha.split(' ')[0]+' '+alert.fecha.split(' ')[1]+' '+alert.fecha.split(' ')[2]}}</p>
+    <p class="subtitulo">{{alert.fecha.split(' ')[3]+' '+alert.fecha.split(' ')[4]}} </p>
   </div>
   <hr size="30px" />
 </div>
