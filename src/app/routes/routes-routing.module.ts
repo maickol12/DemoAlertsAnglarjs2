@@ -6,7 +6,7 @@ import {ListAlertsComponent} from '../list-alerts/list-alerts.component';
 import {ContentComponent} from '../content/content.component';
 import {MapContentComponent} from '../map-content/map-content.component';
 import {VideoComponent} from '../video/video.component';
-
+import {SettingsComponent} from '../settings/settings.component';
 
 const routes: Routes = [
   {
@@ -30,6 +30,9 @@ const routes: Routes = [
   },
   {
     path: 'video', component: VideoComponent
+  },
+  {
+    path: 'settings', component: SettingsComponent
   }
 
 

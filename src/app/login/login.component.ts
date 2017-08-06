@@ -38,7 +38,7 @@ export class LoginComponent implements OnInit {
            alert('Ocurrio un error al iniciar');
         }
       }else{
-        alert('puto');
+        alert("el usuario no se encuentra en la base de datos...");
       }
   }
 }
